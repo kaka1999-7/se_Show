@@ -7,7 +7,7 @@ module.exports={
         port:8088,          //本地端口号
         proxy:{  // 重写的方式，把请求代理到express服务器上
             '/':{                                        //向本地发起的请求，且url路径以/api开头的向target服务器请求
-                target:'http://127.0.0.1:3000',  //目标服务器
+                target:'http://127.0.0.1:3001',  //目标服务器
                 changeOrigin:true,                          //开启跨域
                 // pathRewrite:{'/':''} // 把/api 替换为空  不需要重写路径
             },
