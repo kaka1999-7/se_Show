@@ -1,19 +1,13 @@
 let data = [{
 		userName: "admin01",
-		password: "admin01",
-		email: "2484100597@qq.com",
+		password: 123456@qq.com
+		email: "123456@qq.com",
 		type: "admin",
 	},
 	{
-		userName: "admin02",
-		password: "admin02",
+		userName: "123456789@qq.com",
+		password:"123456789@qq.com",
 		type: "menber",
-		email: "yangtao_1999@qq.com",
-	},
-	{
-		userName: "admin03",
-		password: "admin03",
-		type: "admin",
 		email: "123456789@qq.com",
 	},
 ]
