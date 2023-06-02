@@ -1,6 +1,6 @@
 let data = [{
-		userName: "admin01",
-		password: 123456@qq.com
+		userName: "123456@qq.com",
+		password: "123456@qq.com",
 		email: "123456@qq.com",
 		type: "admin",
 	},
