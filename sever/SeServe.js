@@ -41,7 +41,7 @@ server.get('/login', (req, res) => {
 });
 server.post('/delete', (req, res) => {
 	// fs.rmdir()
-	// console.log(req.body)
+	console.log(req.body)
 	let deleteList=req.body
 	deleteList.forEach(el=>{
 		
@@ -234,16 +234,17 @@ server.get('/video', async function (req, res) {
      if(fs.existsSync('./static/files/'+pdfName + '.pdf')){
      	res.writeHead(200,{'Content-type':'application/pdf'});
      	var rs = fs.createReadStream('./static/files/'+pdfName + '.pdf');
+		 rs.on('end', function () {
+			res.end();
+			// console.log('end call');
+		});
      	rs.pipe(res);
      }else{
      	res.end()
      }
 	 
   
-     rs.on('end', function () {
-         res.end();
-         // console.log('end call');
-     });
+     
  });
 // var server = app.listen(8081, function () {
  
